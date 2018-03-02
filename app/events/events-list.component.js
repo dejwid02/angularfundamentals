@@ -10,12 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var event_service_1 = require("./shared/event.service");
+var toastr_service_1 = require("../common/toastr.service");
 var EventsListComponent = (function () {
-    function EventsListComponent(eventService) {
+    function EventsListComponent(eventService, toastrService) {
         this.eventService = eventService;
+        this.toastrService = toastrService;
     }
     EventsListComponent.prototype.ngOnInit = function () {
         this.events = this.eventService.getEvents();
+    };
+    EventsListComponent.prototype.handleClick = function (name) {
+        this.toastrService.success(name);
     };
     return EventsListComponent;
 }());
@@ -24,7 +29,7 @@ EventsListComponent = __decorate([
         selector: 'events-list',
         templateUrl: 'app/events/events-list.component.html'
     }),
-    __metadata("design:paramtypes", [event_service_1.EventService])
+    __metadata("design:paramtypes", [event_service_1.EventService, toastr_service_1.ToastrService])
 ], EventsListComponent);
 exports.EventsListComponent = EventsListComponent;
 //# sourceMappingURL=events-list.component.js.map
