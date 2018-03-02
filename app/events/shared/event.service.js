@@ -11,9 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var EventService = (function () {
     function EventService() {
-    }
-    EventService.prototype.getEvents = function () {
-        return [
+        this.EVENTS = [
             {
                 id: 1,
                 name: 'Angular Connect',
@@ -33,7 +31,7 @@ var EventService = (function () {
                         presenter: "Peter Bacon Darwin",
                         duration: 1,
                         level: "Intermediate",
-                        abstract: "Learn all about the new pipes in Angular 4, both \n                  how to write them, and how to get the new AI CLI to write \n                  them for you. Given by the famous PBD, president of Angular \n                  University (formerly Oxford University)",
+                        abstract: "Learn all about the new pipes in Angular 4, both \n        how to write them, and how to get the new AI CLI to write \n        them for you. Given by the famous PBD, president of Angular \n        University (formerly Oxford University)",
                         voters: ['bradgreen', 'igorminar', 'martinfowler']
                     },
                     {
@@ -42,7 +40,7 @@ var EventService = (function () {
                         presenter: "Jeff Cross",
                         duration: 1,
                         level: "Intermediate",
-                        abstract: "We all know that our dev teams work hard, but with \n                  the right management they can be even more productive, without \n                  overworking them. In this session I'll show you how to get the \n                  best results from the talent you already have on staff.",
+                        abstract: "We all know that our dev teams work hard, but with \n        the right management they can be even more productive, without \n        overworking them. In this session I'll show you how to get the \n        best results from the talent you already have on staff.",
                         voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
                     },
                     {
@@ -51,7 +49,7 @@ var EventService = (function () {
                         presenter: "Rob Wormald",
                         duration: 2,
                         level: "Advanced",
-                        abstract: "Angular 4 Performance is hot. In this session, we'll see \n                  how Angular gets such great performance by preloading data on \n                  your users devices before they even hit your site using the \n                  new predictive algorithms and thought reading software \n                  built into Angular 4.",
+                        abstract: "Angular 4 Performance is hot. In this session, we'll see \n        how Angular gets such great performance by preloading data on \n        your users devices before they even hit your site using the \n        new predictive algorithms and thought reading software \n        built into Angular 4.",
                         voters: []
                     },
                     {
@@ -60,7 +58,7 @@ var EventService = (function () {
                         presenter: "Brad Green",
                         duration: 2,
                         level: "Advanced",
-                        abstract: "Even though Angular 5 is still 6 years away, we all want \n                  to know all about it so that we can spend endless hours in meetings \n                  debating if we should use Angular 4 or not. This talk will look at \n                  Angular 6 even though no code has yet been written for it. We'll \n                  look at what it might do, and how to convince your manager to \n                  hold off on any new apps until it's released",
+                        abstract: "Even though Angular 5 is still 6 years away, we all want \n        to know all about it so that we can spend endless hours in meetings \n        debating if we should use Angular 4 or not. This talk will look at \n        Angular 6 even though no code has yet been written for it. We'll \n        look at what it might do, and how to convince your manager to \n        hold off on any new apps until it's released",
                         voters: []
                     },
                     {
@@ -69,7 +67,7 @@ var EventService = (function () {
                         presenter: "John Papa",
                         duration: 2,
                         level: "Beginner",
-                        abstract: "It's time to learn the basics of Angular 4. This talk \n                  will give you everything you need to know about Angular 4 to \n                  get started with it today and be building UI's for your self \n                  driving cars and butler-bots in no time.",
+                        abstract: "It's time to learn the basics of Angular 4. This talk \n        will give you everything you need to know about Angular 4 to \n        get started with it today and be building UI's for your self \n        driving cars and butler-bots in no time.",
                         voters: ['bradgreen', 'igorminar']
                     }
                 ]
@@ -89,7 +87,7 @@ var EventService = (function () {
                         presenter: "Pascal Precht & Christoph Bergdorf",
                         duration: 4,
                         level: "Beginner",
-                        abstract: "In this 6 hour workshop you will learn not only how to test Angular 4, \n                  you will also learn how to make the most of your team's efforts. Other topics\n                  will be convincing your manager that testing is a good idea, and using the new\n                  protractor tool for end to end testing.",
+                        abstract: "In this 6 hour workshop you will learn not only how to test Angular 4, \n        you will also learn how to make the most of your team's efforts. Other topics\n        will be convincing your manager that testing is a good idea, and using the new\n        protractor tool for end to end testing.",
                         voters: ['bradgreen', 'igorminar']
                     },
                     {
@@ -98,7 +96,7 @@ var EventService = (function () {
                         presenter: "David East",
                         duration: 3,
                         level: "Intermediate",
-                        abstract: "In this workshop, David East will show you how to use Angular with the new\n                  ultra-real-time 5D Firebase back end, hosting platform, and wine recommendation engine.",
+                        abstract: "In this workshop, David East will show you how to use Angular with the new\n        ultra-real-time 5D Firebase back end, hosting platform, and wine recommendation engine.",
                         voters: ['bradgreen', 'igorminar', 'johnpapa']
                     },
                     {
@@ -107,7 +105,7 @@ var EventService = (function () {
                         presenter: "Patrick Stapleton",
                         duration: 2,
                         level: "Intermediate",
-                        abstract: "Angular 4's source code may be over 25 million lines of code, but it's really \n                  a lot easier to read and understand then you may think. Patrick Stapleton will talk\n                  about his secretes for keeping up with the changes, and navigating around the code.",
+                        abstract: "Angular 4's source code may be over 25 million lines of code, but it's really \n        a lot easier to read and understand then you may think. Patrick Stapleton will talk\n        about his secretes for keeping up with the changes, and navigating around the code.",
                         voters: ['martinfowler']
                     },
                     {
@@ -116,7 +114,7 @@ var EventService = (function () {
                         presenter: "Lukas Ruebbelke",
                         duration: 1,
                         level: "Beginner",
-                        abstract: "In this session, Lukas will present the \n                  secret to being awesome, and how he became the President \n                  of the United States through his amazing programming skills, \n                  showing how you too can be success with just attitude.",
+                        abstract: "In this session, Lukas will present the \n        secret to being awesome, and how he became the President \n        of the United States through his amazing programming skills, \n        showing how you too can be success with just attitude.",
                         voters: ['bradgreen']
                     },
                 ]
@@ -140,7 +138,7 @@ var EventService = (function () {
                         presenter: "Murphy Randle",
                         duration: 2,
                         level: "Intermediate",
-                        abstract: "We all know that Angular is written in Elm, but did you\n                  know how the source code is really written? In this exciting look\n                  into the internals of Angular 4, we'll see exactly how Elm powers\n                  the framework, and what you can do to take advantage of this knowledge.",
+                        abstract: "We all know that Angular is written in Elm, but did you\n        know how the source code is really written? In this exciting look\n        into the internals of Angular 4, we'll see exactly how Elm powers\n        the framework, and what you can do to take advantage of this knowledge.",
                         voters: ['bradgreen', 'martinfowler', 'igorminar']
                     },
                     {
@@ -149,7 +147,7 @@ var EventService = (function () {
                         presenter: "Jamison Dance",
                         duration: 2,
                         level: "Intermediate",
-                        abstract: "React v449.6 has just been released. Let's see how to use \n                  this new version with Angular to create even more impressive applications.",
+                        abstract: "React v449.6 has just been released. Let's see how to use \n        this new version with Angular to create even more impressive applications.",
                         voters: ['bradgreen', 'martinfowler']
                     },
                     {
@@ -158,7 +156,7 @@ var EventService = (function () {
                         presenter: "Rob Wormald",
                         duration: 1,
                         level: "Intermediate",
-                        abstract: "Everyone is using Redux for everything from Angular to React to \n                  Excel macros, but you're still having trouble grasping it? We'll take a look\n                  at how farmers use Redux when harvesting grain as a great introduction to \n                  this game changing technology.",
+                        abstract: "Everyone is using Redux for everything from Angular to React to \n        Excel macros, but you're still having trouble grasping it? We'll take a look\n        at how farmers use Redux when harvesting grain as a great introduction to \n        this game changing technology.",
                         voters: ['bradgreen', 'martinfowler', 'johnpapa']
                     },
                     {
@@ -167,7 +165,7 @@ var EventService = (function () {
                         presenter: "Shai Reznik",
                         duration: 1,
                         level: "Beginner",
-                        abstract: "Let's take a look at some of the stranger pieces of Angular 4,\n                  including neural net nets, Android in Androids, and using pipes with actual pipes.",
+                        abstract: "Let's take a look at some of the stranger pieces of Angular 4,\n        including neural net nets, Android in Androids, and using pipes with actual pipes.",
                         voters: ['bradgreen', 'martinfowler', 'igorminar', 'johnpapa']
                     },
                     {
@@ -176,7 +174,7 @@ var EventService = (function () {
                         presenter: "Ward Bell",
                         duration: 2,
                         level: "Beginner",
-                        abstract: "Being a developer in 2037 is about more than just writing bug-free code. \n                  You also have to look the part. In this amazing expose, Ward will talk you through\n                  how to pick out the right clothes to make your coworkers and boss not only\n                  respect you, but also want to be your buddy.",
+                        abstract: "Being a developer in 2037 is about more than just writing bug-free code. \n        You also have to look the part. In this amazing expose, Ward will talk you through\n        how to pick out the right clothes to make your coworkers and boss not only\n        respect you, but also want to be your buddy.",
                         voters: ['bradgreen', 'martinfowler']
                     },
                     {
@@ -185,7 +183,7 @@ var EventService = (function () {
                         presenter: "John Papa",
                         duration: 2,
                         level: "Intermediate",
-                        abstract: "Coinciding with the release of Star Wars Episode 18, this talk will show how\n                  to use directives in your Angular 4 development while drawing lessons from the new movie,\n                  featuring all your favorite characters like Han Solo's ghost and Darth Jar Jar.",
+                        abstract: "Coinciding with the release of Star Wars Episode 18, this talk will show how\n        to use directives in your Angular 4 development while drawing lessons from the new movie,\n        featuring all your favorite characters like Han Solo's ghost and Darth Jar Jar.",
                         voters: ['bradgreen', 'martinfowler']
                     },
                 ]
@@ -209,7 +207,7 @@ var EventService = (function () {
                         presenter: "Sir Dave Smith",
                         duration: 2,
                         level: "Beginner",
-                        abstract: "Yes, we all work with cyborgs and androids and Martians, but \n                  we probably don't realize that sometimes our internal biases can make it difficult for\n                  these well-designed coworkers to really feel at home coding alongside us. This talk will\n                  look at things we can do to recognize our biases and counteract them.",
+                        abstract: "Yes, we all work with cyborgs and androids and Martians, but \n        we probably don't realize that sometimes our internal biases can make it difficult for\n        these well-designed coworkers to really feel at home coding alongside us. This talk will\n        look at things we can do to recognize our biases and counteract them.",
                         voters: ['bradgreen', 'igorminar']
                     },
                     {
@@ -218,7 +216,7 @@ var EventService = (function () {
                         presenter: "US Secretary of State Zach Galifianakis",
                         duration: 2,
                         level: "Beginner",
-                        abstract: "Angular has been used in most of the major peace brokering that has\n                  happened in the last decade, but there is still much we can do to remove all\n                  war from the world, and Angular will be a key part of that effort.",
+                        abstract: "Angular has been used in most of the major peace brokering that has\n        happened in the last decade, but there is still much we can do to remove all\n        war from the world, and Angular will be a key part of that effort.",
                         voters: ['bradgreen', 'igorminar', 'johnpapa']
                     },
                     {
@@ -227,7 +225,7 @@ var EventService = (function () {
                         presenter: "Dan Wahlin",
                         duration: 3,
                         level: "Advanced",
-                        abstract: "Androids may do everything for us now, allowing us to spend all day playing \n                  the latest Destiny DLC, but we can still improve the massages they give and the handmade\n                  brie they make using Angular 4. This session will show you how.",
+                        abstract: "Androids may do everything for us now, allowing us to spend all day playing \n        the latest Destiny DLC, but we can still improve the massages they give and the handmade\n        brie they make using Angular 4. This session will show you how.",
                         voters: ['igorminar', 'johnpapa']
                     },
                 ]
@@ -251,7 +249,7 @@ var EventService = (function () {
                         presenter: "John Papa",
                         duration: 1,
                         level: "Intermediate",
-                        abstract: "No, this talk isn't about slot machines. We all know that \n                  Angular is used in most waiter-bots and coke vending machines, but\n                  did you know that was also used to write the core engine in the majority\n                  of voting machines? This talk will look at how all presidential elections\n                  are now determined by Angular code.",
+                        abstract: "No, this talk isn't about slot machines. We all know that \n        Angular is used in most waiter-bots and coke vending machines, but\n        did you know that was also used to write the core engine in the majority\n        of voting machines? This talk will look at how all presidential elections\n        are now determined by Angular code.",
                         voters: ['bradgreen', 'igorminar']
                     },
                     {
@@ -260,12 +258,18 @@ var EventService = (function () {
                         presenter: "Dan Wahlin",
                         duration: 2,
                         level: "Beginner",
-                        abstract: "Get the skinny on Angular 4 for anyone new to this great new technology.\n                  Dan Wahlin will show you how you can get started with Angular in 60ish minutes, \n                  guaranteed!",
+                        abstract: "Get the skinny on Angular 4 for anyone new to this great new technology.\n        Dan Wahlin will show you how you can get started with Angular in 60ish minutes, \n        guaranteed!",
                         voters: ['bradgreen', 'igorminar', 'johnpapa']
                     }
                 ]
             }
         ];
+    }
+    EventService.prototype.getEvent = function (id) {
+        return this.EVENTS.find(function (event) { return event.id === id; });
+    };
+    EventService.prototype.getEvents = function () {
+        return this.EVENTS;
     };
     return EventService;
 }());
