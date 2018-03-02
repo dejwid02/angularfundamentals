@@ -9,9 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var event_service_1 = require("./shared/event.service");
 var EventsListComponent = (function () {
-    function EventsListComponent() {
+    function EventsListComponent(eventService) {
+        this.eventService = eventService;
     }
+    EventsListComponent.prototype.ngOnInit = function () {
+        this.events = this.eventService.getEvents();
+    };
     return EventsListComponent;
 }());
 EventsListComponent = __decorate([
@@ -19,7 +24,7 @@ EventsListComponent = __decorate([
         selector: 'events-list',
         templateUrl: 'app/events/events-list.component.html'
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [event_service_1.EventService])
 ], EventsListComponent);
 exports.EventsListComponent = EventsListComponent;
 //# sourceMappingURL=events-list.component.js.map
