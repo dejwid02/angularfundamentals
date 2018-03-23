@@ -19,6 +19,9 @@ var toastr_service_1 = require("./common/toastr.service");
 var event_details_component_1 = require("./events/event-details/event-details.component");
 var routes_1 = require("./routes");
 var router_1 = require("@angular/router");
+var create_event_component_1 = require("./events/create-event.component");
+var _404_component_1 = require("./errors/404.component");
+var event_route_activator_service_1 = require("./events/event-details/event-route-activator.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,9 +31,15 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(routes_1.appRoutes)],
-        declarations: [events_app_componet_1.EventsAppComponent, events_list_component_1.EventsListComponent, event_thumbnail_component_1.EventThumbnailComponent, navbar_component_1.NavBarComponent, event_details_component_1.EventDetailscomponent],
+        declarations: [events_app_componet_1.EventsAppComponent,
+            events_list_component_1.EventsListComponent,
+            event_thumbnail_component_1.EventThumbnailComponent,
+            navbar_component_1.NavBarComponent,
+            event_details_component_1.EventDetailscomponent,
+            create_event_component_1.CreateEventComponent,
+            _404_component_1.Error404Component],
         bootstrap: [events_app_componet_1.EventsAppComponent],
-        providers: [event_service_1.EventService, toastr_service_1.ToastrService]
+        providers: [event_service_1.EventService, toastr_service_1.ToastrService, event_route_activator_service_1.EventRouteActivatorService]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
