@@ -39,9 +39,22 @@ AppModule = __decorate([
             create_event_component_1.CreateEventComponent,
             _404_component_1.Error404Component],
         bootstrap: [events_app_componet_1.EventsAppComponent],
-        providers: [event_service_1.EventService, toastr_service_1.ToastrService, event_route_activator_service_1.EventRouteActivatorService]
+        providers: [
+            event_service_1.EventService,
+            toastr_service_1.ToastrService,
+            event_route_activator_service_1.EventRouteActivatorService,
+            {
+                provide: 'canDeactivateCreateEvent',
+                useValue: checkDirtyState
+            }
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
 exports.AppModule = AppModule;
+function checkDirtyState(component) {
+    if (component.isDirty)
+        return window.confirm("you have not saved your event, do you really want to leave the page?");
+    return true;
+}
 //# sourceMappingURL=app-module.js.map

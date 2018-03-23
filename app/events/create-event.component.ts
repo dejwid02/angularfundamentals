@@ -22,6 +22,7 @@ export class CreateEventComponent {
        
         
     }
+    isDirty:boolean=true
      cancel(){
             this.router.navigateByUrl('')
     }
