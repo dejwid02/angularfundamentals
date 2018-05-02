@@ -18,6 +18,7 @@ var routes_1 = require("./routes");
 var router_1 = require("@angular/router");
 var _404_component_1 = require("./errors/404.component");
 var event_route_activator_service_1 = require("./events/event-details/event-route-activator.service");
+var auth_service_1 = require("./user/auth.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -39,6 +40,7 @@ AppModule = __decorate([
             index_1.EventService,
             toastr_service_1.ToastrService,
             event_route_activator_service_1.EventRouteActivatorService,
+            auth_service_1.AuthService,
             {
                 provide: 'canDeactivateCreateEvent',
                 useValue: checkDirtyState
